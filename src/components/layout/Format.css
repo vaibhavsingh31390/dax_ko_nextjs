@@ -1,5 +1,5 @@
 .ui-container {
-  @apply container max-w-[1320px] mx-auto px-4;
+  @apply container mx-auto px-4;
 }
 
 .ui-row {

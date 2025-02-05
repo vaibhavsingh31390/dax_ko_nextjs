@@ -7,7 +7,7 @@
 }
 
 .dax-ko-listing-card-image {
-  @apply h-[500px] md:h-[350px] w-full bg-cover bg-center;
+  @apply h-[500px] md:h-[468px] w-full bg-cover bg-center;
 }
 
 h4 {

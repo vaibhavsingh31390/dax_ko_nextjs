@@ -131,7 +131,6 @@ function Footer() {
         <Row>
           <Col sm={12} md={12} lg={12} className="dax-ko-footer-menu">
             <div className="dax-ko-footer-menu-left">
-              {/* Column 1 */}
               <ul className="w-full sm:w-[45%] md:w-[18%]">
                 {links.col1.map((link, index) => (
                   <li
@@ -143,7 +142,6 @@ function Footer() {
                 ))}
               </ul>
 
-              {/* Column 2 */}
               <ul className="w-full sm:w-[45%] md:w-[15%]">
                 {links.col2.map((link, index) => (
                   <li
@@ -155,8 +153,7 @@ function Footer() {
                 ))}
               </ul>
 
-              {/* Column 3 */}
-              <ul className="w-full sm:w-[100%] md:w-[47%]">
+              <ul className="w-full sm:w-[100%] md:w-[47%] flex flex-col items-center">
                 {links.col3.map((link, index) => (
                   <li
                     className="dax-ko-footer-menu-right-link mb-[8px] md:mb-[16px]"
@@ -181,7 +178,6 @@ function Footer() {
                 ))}
               </ul>
 
-              {/* Social Title */}
               <div className="w-full sm:w-[100%] md:w-[20%]">
                 <div className="dax-ko-footer-social-title">FOLLOW MARVEL</div>
                 <div className="dax-ko-social-links">
@@ -192,6 +188,7 @@ function Footer() {
                         alt={img.alt}
                         height={50}
                         width={50}
+                        className="cursor-pointer"
                       />
                     );
                   })}
