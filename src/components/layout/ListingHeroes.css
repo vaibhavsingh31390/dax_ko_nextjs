@@ -3,11 +3,11 @@
   font-family: var(--font-rozha) !important;
 }
 .dax-ko-listing-heroes {
-  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-[32.5px] gap-y-[66px] md:gap-x-[65px] md:gap-y-[112px] mt-[0px] md:mt-[112px] mb-[66px] md:mb-[112px] cursor-pointer;
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-[32.5px] gap-y-[66px] md:gap-x-[65px] md:gap-y-[112px] mt-[0px] md:mt-[112px] mb-[66px] md:mb-[112px];
 }
 
 .dax-ko-listing-card {
-  @apply relative;
+  @apply relative  cursor-pointer;
 }
 
 .dax-ko-listing-card-image {

@@ -1,0 +1,22 @@
+.dax-ko-banner-img {
+  @apply w-full bg-cover bg-center py-[50px] bg-no-repeat;
+}
+
+.dax-ko-banner {
+  @apply py-[98px] flex flex-col justify-center items-center;
+}
+
+.dax-ko-banner h1 {
+  @apply leading-normal text-[28px] md:text-[32px] font-normal text-[var(--tertiary-color)] text-center !important;
+  font-family: var(--font-roboto) !important;
+}
+
+.dax-ko-banner h2 {
+  @apply leading-normal text-[24px] md:text-[40px] font-semibold text-[var(--text-color)] text-center mt-[16px] md:mt-[32px] !important;
+  font-family: var(--font-roboto) !important;
+}
+
+.dax-ko-banner p {
+  @apply leading-normal text-[20px] md:text-[30px] font-normal text-[var(--text-color)] text-center mt-[19px] !important;
+  font-family: var(--font-roboto) !important;
+}

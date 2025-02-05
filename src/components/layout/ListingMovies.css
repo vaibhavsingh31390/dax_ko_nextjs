@@ -3,7 +3,7 @@
 }
 
 .dax-ko-listing-card {
-  @apply relative;
+  @apply relative  cursor-pointer;
 }
 
 .dax-ko-listing-card-image {

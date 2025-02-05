@@ -1,5 +1,6 @@
 import Header from "@/components/common/header/Header";
 import "../styles/globals.css";
+import Footer from "@/components/common/footer/Footer";
 
 export const metadata = {
   title: "Home - Marvels",
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

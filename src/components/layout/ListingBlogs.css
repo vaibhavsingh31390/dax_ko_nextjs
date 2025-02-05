@@ -1,4 +1,20 @@
 .dax-ko-listing-blogs-title {
-  @apply text-[26px] leading-normal md:text-[36px] font-normal text-[var(--text-color)] text-left mb-[24px] md:mb-[44px] !important;
+  @apply leading-normal text-[36px] font-normal text-[var(--text-color)] text-left mb-[24px] md:mb-[44px] !important;
   font-family: var(--font-roboto) !important;
+}
+
+.dax-ko-listing-blogs {
+  @apply grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-[66px] gap-y-[32.5px] md:gap-x-[129px] md:gap-y-[53px]  mb-[66px] md:mb-[112px] relative;
+}
+
+.dax-ko-listing-blogs-card {
+  @apply block md:flex  justify-between gap-[21px]  cursor-pointer;
+}
+
+.dax-ko-listing-blogs-card-img {
+  @apply h-[200px] md:h-[126px] md:w-[80%] w-full bg-cover bg-center;
+}
+
+.dax-ko-listing-blogs-card-desc {
+  @apply mt-[15px] md:mt-0 text-[21px] md:text-[24px] leading-normal font-normal text-[var(--text-color)] opacity-100 !important;
 }
