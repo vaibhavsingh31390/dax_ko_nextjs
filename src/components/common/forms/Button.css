@@ -1,11 +1,11 @@
 Button {
-  @apply px-[15px] py-[8px] text-[var(--primary-color)] bg-[var(--primary-background)] transition-all duration-300 rounded-[4px];
+  @apply px-[16px] py-[8px] md:px-[32px] md:py-[16px] text-[var(--text-color)] bg-[var(--tertiary-color)] transition-all duration-300 rounded-[8px] font-normal text-[16px] md:text-[24px];
 }
 
 button:hover {
   @apply text-[var(--primary-background)] bg-[var(--primary-color)];
 }
-
+/* 
 .ui-button {
   @apply px-[15px] py-[8px] text-[var(--primary-background)] bg-[var(--primary-color)] transition-opacity duration-500 rounded-[4px];
 }
@@ -20,4 +20,4 @@ button:hover {
 
 .ui-button-lg:hover {
   @apply opacity-80;
-}
+} */

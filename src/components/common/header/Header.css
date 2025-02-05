@@ -1,14 +1,14 @@
 header {
-  @apply bg-transparent w-full fixed top-0 left-0;
+  @apply bg-transparent w-full;
   z-index: 1000;
 }
 
 nav {
-  @apply flex justify-between items-center py-[3.4rem];
+  @apply flex justify-between items-center py-[1.5rem] md:py-[3.4rem];
 }
 
 .dax-ko-header-logo {
-  @apply w-[204px] h-[84px] flex justify-start items-center bg-[var(--tertiary-color)] p-[7px];
+  @apply w-[102px] h-[42px] md:w-[204px] md:h-[84px] flex justify-start items-center bg-[var(--tertiary-color)] p-[7px];
 }
 
 .dax-ko-header-links {
@@ -29,7 +29,7 @@ nav {
 }
 
 .dax-ko-menu-icon {
-  @apply md:hidden flex items-center text-[70px] cursor-pointer z-50;
+  @apply md:hidden flex items-center text-[35px] md:text-[70px] cursor-pointer z-50;
 }
 
 .dax-ko-header-links-mobile {

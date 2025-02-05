@@ -30,12 +30,12 @@ a {
 }
 
 h1 {
-  @apply text-[100px] leading-[142px] font-normal text-[var(--text-color)] !important;
+  @apply text-[60px] leading-[81px] md:text-[100px] md:leading-[142px] font-normal text-[var(--text-color)] !important;
   font-family: var(--font-rozha) !important;
 }
 
 h2 {
-  @apply text-[32px] leading-[37.5px] font-semibold text-[var(--text-color)] !important;
+  @apply text-[16px] leading-[18.5px] md:text-[32px] md:leading-[37.5px] font-semibold text-[var(--text-color)] !important;
   font-family: var(--font-roboto) !important;
 }
 
