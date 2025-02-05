@@ -24,10 +24,10 @@
 body {
   @apply bg-[var(--primary-background)]  !important;
   background-image: url("/images/bg-image.jpg");
-  background-position: 50% -140px;
+  background-position: 50% -120px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 65%;
+  background-size: 68%;
   font-family: var(--font-roboto) !important;
 }
 
