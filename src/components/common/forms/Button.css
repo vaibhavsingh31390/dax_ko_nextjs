@@ -1,9 +1,10 @@
 Button {
-  @apply px-[16px] py-[8px] md:px-[32px] md:py-[16px] text-[var(--text-color)] bg-[var(--tertiary-color)] transition-all duration-300 rounded-[8px] font-normal text-[16px] md:text-[24px];
+  @apply px-[16px] py-[8px] md:px-[32px] md:py-[16px] text-[var(--text-color)] bg-[var(--tertiary-color)] transition-opacity duration-300 rounded-[8px] font-normal text-[16px] md:text-[24px];
+  font-family: var(--font-roboto) !important;
 }
 
 button:hover {
-  @apply text-[var(--primary-background)] bg-[var(--primary-color)];
+  @apply opacity-85;
 }
 /* 
 .ui-button {

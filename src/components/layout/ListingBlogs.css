@@ -1,0 +1,4 @@
+.dax-ko-listing-blogs-title {
+  @apply text-[26px] leading-normal md:text-[36px] font-normal text-[var(--text-color)] text-left mb-[24px] md:mb-[44px] !important;
+  font-family: var(--font-roboto) !important;
+}

@@ -1,0 +1,30 @@
+.dax-ko-listing-heroes-title {
+  @apply text-[44px] leading-[136px] md:text-[96px] md:leading-[136.32px] font-normal text-[var(--text-color)] text-center !important;
+  font-family: var(--font-rozha) !important;
+}
+.dax-ko-listing-heroes {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-[32.5px] gap-y-[66px] md:gap-x-[65px] md:gap-y-[112px] mt-[0px] md:mt-[112px] mb-[66px] md:mb-[112px] cursor-pointer;
+}
+
+.dax-ko-listing-card {
+  @apply relative;
+}
+
+.dax-ko-listing-card-image {
+  @apply h-[500px] md:h-[350px] w-full bg-cover bg-center;
+}
+
+.dax-ko-listing-card-meta-h h4 {
+  @apply mt-0 text-[21px]  md:text-[35px] leading-normal font-semibold text-[var(--text-color)] opacity-100 !important;
+}
+.dax-ko-listing-card-meta-h {
+  @apply mt-[16px] flex gap-[21px] md:gap-0 justify-between items-center  !important;
+}
+
+.dax-ko-listing-card-meta-h p {
+  @apply text-[16px] md:text-[22px] leading-[12.44px] md:leading-[25.78px] font-normal text-[var(--tertiary-color)] opacity-[100%];
+}
+
+.dax-ko-listing-card-meta-more p {
+  @apply mt-0 text-[21px] leading-[25.13px] md:text-[28px] md:leading-[32.81px] font-semibold text-[var(--text-color)] opacity-100 text-left !important;
+}

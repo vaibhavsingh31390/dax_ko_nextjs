@@ -1,0 +1,30 @@
+.dax-ko-listing-movies {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-[32.5px] gap-y-[66px] md:gap-x-[65px] md:gap-y-[112px] mt-[66px] md:mt-[112px] mb-[66px] md:mb-[112px];
+}
+
+.dax-ko-listing-card {
+  @apply relative;
+}
+
+.dax-ko-listing-card-image {
+  @apply h-[500px] md:h-[350px] w-full bg-cover bg-center;
+}
+
+h4 {
+  @apply mt-[9px] md:mt-[18px] text-[21px] leading-[25.13px] md:text-[24px] md:leading-[28.13px] font-semibold text-[var(--text-color)] opacity-100 min-h-0 md:min-h-[56px] !important;
+}
+.dax-ko-listing-card-meta {
+  @apply mt-[16px] flex justify-start gap-[21px] md:gap-0 md:justify-between;
+}
+
+.dax-ko-listing-card-meta p {
+  @apply text-[16px] md:text-[20px] leading-[12.44px] md:leading-[23.44px] font-normal text-[var(--text-color)] opacity-[50%];
+}
+
+.dax-ko-listing-card-meta-border {
+  @apply text-[16px] md:text-[20px] leading-[12.44px] md:leading-[23.44px] font-normal text-[var(--text-color)] opacity-100 !important;
+}
+
+.dax-ko-listing-card-meta-more {
+  @apply text-[24px] leading-[28.13px] font-normal text-[var(--tertiary-color)] w-full text-right block !important;
+}

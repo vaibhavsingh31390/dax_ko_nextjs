@@ -21,7 +21,27 @@
 }
 
 body {
-  @apply bg-[var(--primary-background)] !important;
+  @apply bg-[var(--primary-background)] min-h-full md:min-h-[315svh] !important;
+  background-image: url("/images/bg-image.jpg");
+  background-position: 50% -90px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 80%;
+  font-family: var(--font-roboto) !important;
+}
+
+@media (max-width: 1024px) {
+  body {
+    background-size: 100%;
+    background-position: 50% -40px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-size: 150%;
+    background-position: 50% -40px;
+  }
 }
 
 a {
@@ -54,13 +74,14 @@ h5 {
   font-family: var(--font-roboto) !important;
 }
 
-/* Responsive Typography Adjustments */
-@layer utilities {
-  .responsive-text {
-    @apply text-[20px] md:text-[24px] lg:text-[32px] !important;
-  }
+.dax-ko-content-container {
+  @apply bg-[var(--primary-background)] min-h-full !important;
+  background-image: url("/images/bg-2.png");
+  background-position: top center;
+  background-size: contain;
+  background-color: transparent !important;
+}
 
-  .responsive-heading {
-    @apply text-[40px] md:text-[60px] lg:text-[100px] leading-[1.2] !important;
-  }
+.dax-ko-listings-container {
+  @apply bg-[var(--primary-background)];
 }

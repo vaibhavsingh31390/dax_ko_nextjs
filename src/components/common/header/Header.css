@@ -21,7 +21,7 @@ nav {
 }
 
 .dax-ko-header-link.active {
-  @apply opacity-85;
+  @apply opacity-85 underline;
 }
 
 .dax-ko-header-link:hover {
