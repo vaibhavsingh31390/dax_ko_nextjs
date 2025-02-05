@@ -1,5 +1,5 @@
 .dax-ko-banner-img {
-  @apply w-full bg-cover bg-center py-[50px] bg-no-repeat;
+  @apply w-full bg-cover bg-center py-[100px] md:py-[50px] bg-no-repeat;
 }
 
 .dax-ko-banner {

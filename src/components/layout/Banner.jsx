@@ -10,7 +10,7 @@ function Banner() {
         sm={12}
         md={6}
         lg={6}
-        className="dax-ko-banner-img"
+        className="dax-ko-banner-img md:w-[50%]"
         style={{
           backgroundImage: `url("/images/bg-3.jpg")`,
         }}
