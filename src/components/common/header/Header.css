@@ -1,0 +1,44 @@
+header {
+  @apply bg-transparent w-full fixed top-0 left-0;
+  z-index: 1000;
+}
+
+nav {
+  @apply flex justify-between items-center py-[3.4rem];
+}
+
+.dax-ko-header-logo {
+  @apply w-[204px] h-[84px] flex justify-start items-center bg-[var(--tertiary-color)] p-[7px];
+}
+
+.dax-ko-header-links {
+  @apply hidden md:flex justify-between items-center md:gap-5 lg:gap-[35px];
+}
+
+.dax-ko-header-link {
+  @apply text-[24px] leading-[28.13px] font-[400] text-[var(--text-color)] transition-opacity duration-300 ease-in-out;
+  font-family: var(--font-roboto);
+}
+
+.dax-ko-header-link.active {
+  @apply opacity-85;
+}
+
+.dax-ko-header-link:hover {
+  @apply opacity-85;
+}
+
+.dax-ko-menu-icon {
+  @apply md:hidden flex items-center text-[70px] cursor-pointer z-50;
+}
+
+.dax-ko-header-links-mobile {
+  @apply md:hidden fixed inset-0 bg-[var(--primary-background)] z-40 flex flex-col items-center justify-center gap-6 w-full;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.dax-ko-header-links-mobile.open {
+  transform: translateX(0);
+}

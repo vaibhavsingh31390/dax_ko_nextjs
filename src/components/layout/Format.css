@@ -1,0 +1,7 @@
+.ui-container {
+  @apply container max-w-[1320px] mx-auto px-4;
+}
+
+.ui-row {
+  @apply flex flex-wrap md:flex-nowrap -mx-4;
+}

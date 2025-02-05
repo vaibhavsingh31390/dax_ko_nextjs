@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Rozha+One&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-background: #000000 !important;
+  --secondary-background: #ffffff !important;
+  --tertiary-color: #f0141e !important;
+  --text-color: #ffffff !important;
+  --font-roboto: "Roboto", sans-serif !important;
+  --font-rozha: "Rozha One", serif !important;
+}
+
+[data-theme="dark"] {
+  --primary-background: #000000 !important;
+  --secondary-background: #ffffff !important;
+  --tertiary-color: #f0141e !important;
+  --text-color: #ffffff !important;
+}
+
+body {
+  @apply bg-[var(--primary-background)] !important;
+}
+
+a {
+  @apply text-[24px] leading-[28.13px] font-normal text-[var(--text-color)] !important;
+  font-family: var(--font-roboto) !important;
+}
+
+h1 {
+  @apply text-[100px] leading-[142px] font-normal text-[var(--text-color)] !important;
+  font-family: var(--font-rozha) !important;
+}
+
+h2 {
+  @apply text-[32px] leading-[37.5px] font-semibold text-[var(--text-color)] !important;
+  font-family: var(--font-roboto) !important;
+}
+
+h3 {
+  @apply text-[24px] leading-[28.13px] font-semibold text-[var(--text-color)] !important;
+  font-family: var(--font-roboto) !important;
+}
+
+h4 {
+  @apply text-[20px] leading-[23.44px] font-normal text-[var(--text-color)] opacity-[50%] !important;
+  font-family: var(--font-roboto) !important;
+}
+
+h5 {
+  @apply text-[20px] leading-[23.44px] font-normal text-[var(--tertiary-color)] opacity-[50%] !important;
+  font-family: var(--font-roboto) !important;
+}
+
+/* Responsive Typography Adjustments */
+@layer utilities {
+  .responsive-text {
+    @apply text-[20px] md:text-[24px] lg:text-[32px] !important;
+  }
+
+  .responsive-heading {
+    @apply text-[40px] md:text-[60px] lg:text-[100px] leading-[1.2] !important;
+  }
+}
