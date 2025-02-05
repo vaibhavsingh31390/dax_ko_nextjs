@@ -23,10 +23,10 @@
 body {
   @apply bg-[var(--primary-background)] min-h-full md:min-h-[315svh] !important;
   background-image: url("/images/bg-image.jpg");
-  background-position: 50% -90px;
+  background-position: 50% -120px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 80%;
+  background-size: 60%;
   font-family: var(--font-roboto) !important;
 }
 
@@ -41,6 +41,13 @@ body {
   body {
     background-size: 150%;
     background-position: 50% -40px;
+  }
+}
+
+@media (min-resolution: 192dpi) {
+  body {
+    background-size: 60%;
+    background-position: 50% -120px;
   }
 }
 
