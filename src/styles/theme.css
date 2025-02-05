@@ -23,31 +23,24 @@
 body {
   @apply bg-[var(--primary-background)] min-h-full md:min-h-[315svh] !important;
   background-image: url("/images/bg-image.jpg");
-  background-position: 50% -160px;
+  background-position: 50% -100px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 68%;
+  background-size: 70%;
   font-family: var(--font-roboto) !important;
 }
 
 @media (max-width: 1024px) {
   body {
     background-size: 100%;
-    background-position: 50% -40px;
+    background-position: 50% -60px;
   }
 }
 
 @media (max-width: 480px) {
   body {
-    background-size: 150%;
-    background-position: 50% -40px;
-  }
-}
-
-@media (min-resolution: 192dpi) {
-  body {
-    background-size: 60%;
-    background-position: 50% -120px;
+    background-size: 170%;
+    background-position: 50% -60px;
   }
 }
 
