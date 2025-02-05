@@ -22,26 +22,26 @@
 }
 
 body {
-  @apply bg-[var(--primary-background)] min-h-full md:min-h-[315svh] !important;
+  @apply bg-[var(--primary-background)]  !important;
   background-image: url("/images/bg-image.jpg");
-  background-position: 50% -100px;
+  background-position: 50% -140px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 70%;
+  background-size: 65%;
   font-family: var(--font-roboto) !important;
 }
 
 @media (max-width: 1024px) {
   body {
-    background-size: 100%;
+    background-size: 120%;
     background-position: 50% -60px;
   }
 }
 
 @media (max-width: 480px) {
   body {
-    background-size: 170%;
-    background-position: 50% -60px;
+    background-size: 180%;
+    background-position: 56% -60px;
   }
 }
 
@@ -84,5 +84,9 @@ h5 {
 }
 
 .dax-ko-listings-container {
+  @apply bg-[var(--primary-background)];
+}
+
+.bg-correction {
   @apply bg-[var(--primary-background)];
 }

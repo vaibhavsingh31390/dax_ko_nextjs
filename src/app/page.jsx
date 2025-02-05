@@ -10,10 +10,12 @@ export default function Home() {
     <>
       <HeroSection />
       <BorderGradientSection />
-      <MovieListingsSection />
-      <HeroListingsSection />
-      <BlogsSection />
-      <BannerSection />
+      <div className="bg-correction">
+        <MovieListingsSection />
+        <HeroListingsSection />
+        <BlogsSection />
+        <BannerSection />
+      </div>
     </>
   );
 }
