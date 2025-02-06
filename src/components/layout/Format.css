@@ -1,13 +1,37 @@
 .ui-container {
-  @apply container mx-auto px-4;
+  @apply max-w-full mx-auto px-4;
+}
+
+@media (min-width: 640px) {
+  .ui-container {
+    @apply max-w-screen-sm;
+  }
+}
+
+@media (min-width: 768px) {
+  .ui-container {
+    @apply max-w-screen-md;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ui-container {
+    @apply max-w-screen-lg;
+  }
+}
+
+@media (min-width: 1280px) {
+  .ui-container {
+    @apply max-w-screen-xl;
+  }
+}
+
+@media (min-width: 1536px) {
+  .ui-container {
+    @apply max-w-screen-2xl;
+  }
 }
 
 .ui-row {
   @apply flex flex-wrap md:flex-nowrap -mx-4;
-}
-
-@media (min-width: 1519px) {
-  .ui-container {
-    max-width: 1320px !important;
-  }
 }

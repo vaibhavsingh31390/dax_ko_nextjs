@@ -164,7 +164,9 @@ function Footer() {
                       style={
                         link.image
                           ? { backgroundImage: `url(${link.image})` }
-                          : {}
+                          : {
+                              backgroundImage: `url("/images/placeholder.webp")`,
+                            }
                       }
                     ></div>
                     <div className="meta">

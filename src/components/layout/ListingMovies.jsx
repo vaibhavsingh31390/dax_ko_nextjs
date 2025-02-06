@@ -15,7 +15,7 @@ function ListingMovies({ comics }) {
                   ? {
                       backgroundImage: `url(${comic.thumbnail?.path}.${comic?.thumbnail?.extension})`,
                     }
-                  : {}
+                  : { backgroundImage: `url("/images/placeholder.webp")` }
               }
             ></div>
             <h4>{comic.title}</h4>
