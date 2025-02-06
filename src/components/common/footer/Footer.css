@@ -6,7 +6,7 @@ footer {
 }
 
 .dax-ko-footer-social-title {
-  @apply text-[16px] md:text-[24px] leading-normal md:leading-[28.13px] font-normal text-[var(--text-color)] mb-[32px] !important;
+  @apply text-[16px] md:text-[24px] leading-normal md:leading-[28.13px] font-normal text-[var(--text-color)] mb-[32px] text-center md:text-left !important;
   font-family: var(--font-roboto) !important;
 }
 
@@ -43,7 +43,7 @@ footer {
 }
 
 .dax-ko-social-links {
-  @apply flex justify-start items-center gap-[16px] flex-wrap;
+  @apply flex justify-center md:justify-start items-center gap-[16px] flex-wrap;
 }
 
 .dax-ko-footer-end {

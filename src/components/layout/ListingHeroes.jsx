@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./ListingHeroes.css";
 import Modal from "../common/modal/Modal";
 import { AnimatePresence } from "framer-motion";
+import { generateKeys } from "@/utils/Helpers";
 
 const heroes = [
   {
@@ -69,6 +70,11 @@ function ListingHeroes() {
     setSelectedHero(null);
   };
 
+  const { timestamp, hash } = generateKeys(
+    process.env.NEXT_PUBLIC_MARAVEL_API_PRIVATE_KEY,
+    process.env.NEXT_PUBLIC_MARAVEL_API_PUBLIC_KEY
+  );
+
   return (
     <>
       <h1 className="dax-ko-listing-heroes-title">See Marvel Heroes</h1>
@@ -100,7 +106,7 @@ function ListingHeroes() {
       <AnimatePresence>
         {isModalOpen && (
           <Modal
-            url={`${process.env.NEXT_PUBLIC_MARAVEL_API_HOST}v1/public/characters?apikey=${process.env.NEXT_PUBLIC_MARAVEL_API_KEY}&ts=${process.env.NEXT_PUBLIC_MARAVEL_API_TS}&hash=${process.env.NEXT_PUBLIC_MARAVEL_API_HASH}&name=${selectedHero.alias}`}
+            url={`${process.env.NEXT_PUBLIC_MARAVEL_API_HOST}v1/public/characters?apikey=${process.env.NEXT_PUBLIC_MARAVEL_API_PUBLIC_KEY}&ts=${timestamp}&hash=${hash}&name=${selectedHero.alias}`}
             handleModal={handleModalClose}
           />
         )}

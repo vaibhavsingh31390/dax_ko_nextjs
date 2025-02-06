@@ -118,13 +118,15 @@ function Footer() {
             className="flex justify-start md:justify-center items-center"
           >
             <div className="dax-ko-footer-logo">
-              <Image
-                src="/images/Marvel_logo.png"
-                alt="Brand Logo"
-                width={262}
-                height={120}
-                priority
-              />
+              <Link href={`/`}>
+                <Image
+                  src="/images/Marvel_logo.png"
+                  alt="Brand Logo"
+                  width={262}
+                  height={120}
+                  priority
+                />
+              </Link>
             </div>
           </Col>
         </Row>

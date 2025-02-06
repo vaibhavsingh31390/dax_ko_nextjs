@@ -1,5 +1,5 @@
 .dax-ko-listing-heroes-title {
-  @apply text-[44px] leading-[136px] md:text-[96px] md:leading-[136.32px] font-normal text-[var(--text-color)] text-center !important;
+  @apply text-[44px] leading-normal md:text-[96px] md:leading-[136.32px] font-normal text-[var(--text-color)] mt-5 md:mt-0 mb-5 md:mb-0 text-center !important;
   font-family: var(--font-rozha) !important;
 }
 .dax-ko-listing-heroes {

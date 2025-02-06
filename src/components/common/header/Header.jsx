@@ -44,13 +44,15 @@ function Header() {
           <Col sm={12} md={12} lg={12}>
             <nav>
               <div className="dax-ko-header-logo">
-                <Image
-                  src="/images/Marvel_logo.png"
-                  alt="Brand Logo"
-                  width={204}
-                  height={84}
-                  priority
-                />
+                <Link href={`/`}>
+                  <Image
+                    src="/images/Marvel_logo.png"
+                    alt="Brand Logo"
+                    width={204}
+                    height={84}
+                    priority
+                  />
+                </Link>
               </div>
               <div className="dax-ko-header-links">
                 {links.map((link, index) => {
