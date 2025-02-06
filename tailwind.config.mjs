@@ -7,13 +7,6 @@ export default {
   ],
   theme: {
     extend: {
-      maxWidth: {
-        "screen-sm": "540px",
-        "screen-md": "720px",
-        "screen-lg": "960px",
-        "screen-xl": "1140px",
-        "screen-2xl": "1320px",
-      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
