@@ -7,5 +7,5 @@
 }
 
 .dax-ko-modal-container-close-btn {
-  @apply flex justify-center items-center p-4 h-[80px] w-[80px] text-[34px] bg-transparent absolute top-2 right-2 md:top-3 md:right-4 transition-colors duration-300 hover:text-[var(--tertiary-color)];
+  @apply flex justify-center items-center p-4 h-[80px] w-[80px] text-[34px] bg-transparent fixed top-2 right-2 md:top-3 md:right-4 transition-colors duration-300 hover:text-[var(--tertiary-color)];
 }

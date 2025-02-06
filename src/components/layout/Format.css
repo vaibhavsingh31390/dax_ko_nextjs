@@ -5,3 +5,9 @@
 .ui-row {
   @apply flex flex-wrap md:flex-nowrap -mx-4;
 }
+
+@media (min-width: 1519px) {
+  .ui-container {
+    max-width: 1320px !important;
+  }
+}

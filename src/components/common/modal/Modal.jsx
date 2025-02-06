@@ -11,16 +11,16 @@ import useFetch from "@/hooks/useFetch";
 
 function Modal({ url, options, handleModal }) {
   const { data, loading, error, fetchData } = useFetch(url, options);
-  const toastOption = {
-    duration: 3000,
-    style: {
-      backgroundColor: "var(--tertiary-color)",
-      color: "var(--text-color)",
-    },
-    iconTheme: {
-      primary: "var(--primary-background)",
-    },
-  };
+  // const toastOption = {
+  //   duration: 3000,
+  //   style: {
+  //     backgroundColor: "var(--tertiary-color)",
+  //     color: "var(--text-color)",
+  //   },
+  //   iconTheme: {
+  //     primary: "var(--primary-background)",
+  //   },
+  // };
 
   useEffect(() => {
     fetchData();
@@ -28,15 +28,16 @@ function Modal({ url, options, handleModal }) {
 
   useEffect(() => {
     if (error) {
-      toast.error(error, toastOption);
+      // toast.error(error, toastOption);
+      console.error(error);
     }
   }, [error]);
 
   useEffect(() => {
     if (data?.data?.count > 0) {
-      toast.success("Data loaded successfully!", toastOption);
+      // toast.success("Data loaded successfully!", toastOption);
     } else if (data?.data?.count === 0) {
-      toast.error("Data not found!", toastOption);
+      // toast.error("Data not found!", toastOption);
     }
   }, [data?.data?.count]);
 

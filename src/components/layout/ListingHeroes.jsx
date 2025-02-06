@@ -98,7 +98,7 @@ function ListingHeroes() {
       <AnimatePresence>
         {isModalOpen && (
           <Modal
-            url={`${process.env.NEXT_PUBLIC_MARAVEL_API_HOST_CHAR}?apikey=${process.env.NEXT_PUBLIC_MARAVEL_API_KEY}&ts=${process.env.NEXT_PUBLIC_MARAVEL_API_TS}&hash=${process.env.NEXT_PUBLIC_MARAVEL_API_HASH}&name=${selectedHero.alias}`}
+            url={`${process.env.NEXT_PUBLIC_MARAVEL_API_HOST}v1/public/characters?apikey=${process.env.NEXT_PUBLIC_MARAVEL_API_KEY}&ts=${process.env.NEXT_PUBLIC_MARAVEL_API_TS}&hash=${process.env.NEXT_PUBLIC_MARAVEL_API_HASH}&name=${selectedHero.alias}`}
             handleModal={handleModalClose}
           />
         )}

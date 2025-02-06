@@ -5,7 +5,7 @@ import toast from "react-hot-toast";
 import { motion } from "framer-motion";
 import "./Comics.css";
 import Loader from "../common/loader/Loader";
-import { debounce } from "@/utils/Helpers";
+import { debounce, generateKeys } from "@/utils/Helpers";
 
 function Comics() {
   const [pagination, setPagination] = useState({
@@ -16,11 +16,11 @@ function Comics() {
   });
   const [allComics, setAllComics] = useState([]);
   const [hasMore, setHasMore] = useState(true);
-  const startDate = "2022-01-01";
-  const endDate = new Date().toISOString().split("T")[0];
-  const url = `http://gateway.marvel.com/v1/public/characters/1009491/comics?apikey=${process.env.NEXT_PUBLIC_MARAVEL_API_KEY}&ts=${process.env.NEXT_PUBLIC_MARAVEL_API_TS}&hash=${process.env.NEXT_PUBLIC_MARAVEL_API_HASH}&&limit=${pagination.limit}&offset=${pagination.offset}&dateRange=${startDate},${endDate}`;
-  console.log(url);
-
+  const { timestamp, hash } = generateKeys(
+    process.env.NEXT_PUBLIC_MARAVEL_API_PRIVATE_KEY,
+    process.env.NEXT_PUBLIC_MARAVEL_API_PUBLIC_KEY
+  );
+  const url = `${process.env.NEXT_PUBLIC_MARAVEL_API_HOST}v1/public/characters/1009491/comics?apikey=${process.env.NEXT_PUBLIC_MARAVEL_API_PUBLIC_KEY}&ts=${timestamp}&hash=${hash}&&limit=${pagination.limit}&offset=${pagination.offset}`;
   const { data, loading, error, fetchData } = useFetch(url, {}, true, 300);
   const toastOption = {
     duration: 3000,
@@ -37,7 +37,7 @@ function Comics() {
     if (hasMore) {
       fetchData();
     }
-  }, [url]);
+  }, [pagination.page]);
 
   useEffect(() => {
     if (error) {

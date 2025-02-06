@@ -1,4 +1,3 @@
-import Button from "@/components/common/forms/Button";
 import { Col, Container, Row } from "@/components/layout/Format";
 
 function HeroSection() {
