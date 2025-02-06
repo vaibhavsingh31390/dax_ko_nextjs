@@ -43,7 +43,7 @@ footer {
 }
 
 .dax-ko-social-links {
-  @apply flex justify-start items-center gap-[16px];
+  @apply flex justify-start items-center gap-[16px] flex-wrap;
 }
 
 .dax-ko-footer-end {

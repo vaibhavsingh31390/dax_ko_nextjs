@@ -1,0 +1,14 @@
+.dax-ko-comics-container {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-[32.5px] gap-y-[40px] md:gap-x-[65px] md:gap-y-[112px] mt-[0px] md:mt-[112px] mb-[66px] md:mb-[112px];
+}
+
+.dax-ko-comic-image {
+  @apply h-[500px] md:h-[444px] w-full bg-cover bg-center;
+}
+.dax-ko-comic-loader {
+  @apply w-full flex justify-center items-center;
+}
+
+.dax-ko-comic-title {
+  @apply text-[21px]  md:text-[24px] leading-normal font-semibold text-[var(--text-color)] opacity-100 mt-2 !important;
+}

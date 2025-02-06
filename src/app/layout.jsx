@@ -1,6 +1,7 @@
 import Header from "@/components/common/header/Header";
-import "../styles/globals.css";
 import Footer from "@/components/common/footer/Footer";
+import { Toaster } from "react-hot-toast";
+import "../styles/globals.css";
 
 export const metadata = {
   title: "Home - Marvels",
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
+        <Toaster toastStyle={{ backgroundColor: "var(--tertiary-color)" }} />
       </body>
     </html>
   );

@@ -1,5 +1,8 @@
 "use client";
+import { useState } from "react";
 import "./ListingHeroes.css";
+import Modal from "../common/modal/Modal";
+import { AnimatePresence } from "framer-motion";
 
 const heroes = [
   {
@@ -23,17 +26,17 @@ const heroes = [
   {
     alias: "Hulk",
     image: "/images/heroes/hulk.png",
-    realName: "Brucr Banner",
+    realName: "Bruce Banner",
     releaseDate: "1983",
   },
   {
-    alias: "Captin Marvel",
+    alias: "Captain Marvel",
     image: null,
     realName: "Carol Danvers",
     releaseDate: "1970",
   },
   {
-    alias: "Gmora",
+    alias: "Gamora",
     image: "/images/heroes/she_hulk.png",
     realName: "Zoe Saldana",
     releaseDate: "1970",
@@ -53,35 +56,53 @@ const heroes = [
 ];
 
 function ListingHeroes() {
-  const handleHeroes = () => {
-    console.log("yes");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedHero, setSelectedHero] = useState(null);
+
+  const handleHeroClick = (hero) => {
+    setSelectedHero(hero);
+    setIsModalOpen(true);
   };
+
+  const handleModalClose = () => {
+    setIsModalOpen(false);
+    setSelectedHero(null);
+  };
+
   return (
     <>
-      <h1 className="dax-ko-listing-heroes-title">See Marvel Heros</h1>
+      <h1 className="dax-ko-listing-heroes-title">See Marvel Heroes</h1>
       <div className="dax-ko-listing-heroes">
-        {heroes.map((movie, index) => (
+        {heroes.map((hero, index) => (
           <div
             key={index}
             className="dax-ko-listing-card"
-            onClick={handleHeroes}
+            onClick={() => handleHeroClick(hero)}
           >
             <div
               className="dax-ko-listing-card-image"
               style={
-                movie.image ? { backgroundImage: `url(${movie.image})` } : {}
+                hero.image ? { backgroundImage: `url(${hero.image})` } : {}
               }
             ></div>
             <div className="dax-ko-listing-card-meta-h">
-              <h4>{movie.alias}</h4>
-              <p>{movie.releaseDate}</p>
+              <h4>{hero.alias}</h4>
+              <p>{hero.releaseDate}</p>
             </div>
             <div className={`dax-ko-listing-card-meta-more`}>
-              <p>{movie.realName}</p>
+              <p>{hero.realName}</p>
             </div>
           </div>
         ))}
       </div>
+      <AnimatePresence>
+        {isModalOpen && (
+          <Modal
+            url={`${process.env.NEXT_PUBLIC_MARAVEL_API_HOST_CHAR}?apikey=${process.env.NEXT_PUBLIC_MARAVEL_API_KEY}&ts=${process.env.NEXT_PUBLIC_MARAVEL_API_TS}&hash=${process.env.NEXT_PUBLIC_MARAVEL_API_HASH}&name=${selectedHero.alias}`}
+            handleModal={handleModalClose}
+          />
+        )}
+      </AnimatePresence>
     </>
   );
 }

@@ -1,0 +1,43 @@
+/* CharacterDetails.css */
+.dax-ko-hero-character-container {
+  @apply block md:flex;
+}
+
+.dax-ko-hero-character-image {
+  @apply w-full md:w-1/2 flex flex-col justify-start items-start gap-5 p-4 md:p-8;
+}
+
+.dax-ko-hero-character-meta {
+  @apply w-full md:w-1/2 flex flex-col justify-start items-start gap-5 p-4 md:p-8;
+}
+
+.dax-ko-hero-character-image h2 {
+  @apply text-[50px] leading-normal md:text-[50px] font-normal text-[var(--tertiary-color)] !important;
+  font-family: var(--font-rozha) !important;
+}
+
+.dax-ko-hero-character-image h1 {
+  @apply text-[70px] leading-normal md:text-[70px] font-normal text-[var(--text-color)] underline !important;
+  font-family: var(--font-rozha) !important;
+}
+
+.dax-ko-hero-character-image h3 {
+  @apply text-[21px] leading-normal md:text-[21px] font-normal text-[var(--text-color)] opacity-[50%] !important;
+}
+
+.dax-ko-hero-character-meta h4 {
+  @apply text-[36px] leading-normal md:text-[36px] font-normal text-[var(--text-color)] mt-0  !important;
+  font-family: var(--font-rozha) !important;
+}
+
+.dax-ko-hero-character-meta ul {
+  @apply list-disc list-inside;
+}
+
+.dax-ko-hero-character-meta li {
+  @apply text-[16px] leading-normal md:text-[16px] font-normal text-[var(--text-color)] opacity-[50%] !important;
+}
+
+.dax-ko-hero-character-image img {
+  @apply transition-transform duration-300 ease-in-out hover:scale-105;
+}

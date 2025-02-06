@@ -1,4 +1,6 @@
-import { Container, Row, Col } from "@/components/layout/Format";
+import HeroSection from "./(movie_sections)/HeroSection";
+import BorderGradientSection from "./(movie_sections)/BorderGradientSection";
+import ComicSection from "./(movie_sections)/ComicSection";
 
 export const metadata = {
   title: "Movies - Marvels",
@@ -7,12 +9,12 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <Container className="mt-[200px]">
-      <Row>
-        <Col sm={12} md={12} lg={12}>
-          <h1>Movies</h1>
-        </Col>
-      </Row>
-    </Container>
+    <>
+      <HeroSection />
+      <BorderGradientSection />
+      <div className="bg-correction">
+        <ComicSection />
+      </div>
+    </>
   );
 }

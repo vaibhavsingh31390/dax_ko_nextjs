@@ -181,11 +181,12 @@ function Footer() {
               <div className="w-full sm:w-[100%] md:w-[20%]">
                 <div className="dax-ko-footer-social-title">FOLLOW MARVEL</div>
                 <div className="dax-ko-social-links">
-                  {links.col4.map((img) => {
+                  {links.col4.map((img, index) => {
                     return (
                       <Image
                         src={img.image}
                         alt={img.alt}
+                        key={index}
                         height={50}
                         width={50}
                         className="cursor-pointer"
@@ -200,8 +201,12 @@ function Footer() {
         <Row>
           <Col sm={12} md={12} lg={12}>
             <div className="dax-ko-footer-end">
-              {links.col5.map((data) => {
-                return <Link href={data.link}>{data.name}</Link>;
+              {links.col5.map((data, index) => {
+                return (
+                  <Link key={index} href={data.link}>
+                    {data.name}
+                  </Link>
+                );
               })}
             </div>
           </Col>
