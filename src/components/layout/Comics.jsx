@@ -120,7 +120,7 @@ function Comics() {
                   ? {
                       backgroundImage: `url(${comic.thumbnail.path}.${comic.thumbnail.extension})`,
                     }
-                  : { backgroundImage: `url("/images/placeholder.webp")` }
+                  : {}
               }
             ></div>
             <div className="dax-ko-comic-title">{comic.title}</div>

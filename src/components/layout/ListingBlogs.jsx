@@ -37,9 +37,7 @@ function ListingBlogs() {
               <div
                 className="dax-ko-listing-blogs-card-img"
                 style={
-                  blog.image
-                    ? { backgroundImage: `url(${blog.image})` }
-                    : { backgroundImage: `url("/images/placeholder.webp")` }
+                  blog.image ? { backgroundImage: `url(${blog.image})` } : {}
                 }
               ></div>
               <h2 className="dax-ko-listing-blogs-card-desc">{blog.desc}</h2>

@@ -88,9 +88,7 @@ function ListingHeroes() {
             <div
               className="dax-ko-listing-card-image"
               style={
-                hero.image
-                  ? { backgroundImage: `url(${hero.image})` }
-                  : { backgroundImage: `url("/images/placeholder.webp")` }
+                hero.image ? { backgroundImage: `url(${hero.image})` } : {}
               }
             ></div>
             <div className="dax-ko-listing-card-meta-h">
