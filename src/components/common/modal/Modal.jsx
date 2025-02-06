@@ -11,7 +11,6 @@ import useFetch from "@/hooks/useFetch";
 
 function Modal({ url, options, handleModal }) {
   const { data, loading, error, fetchData } = useFetch(url, options);
-  console.log(url);
 
   // const toastOption = {
   //   duration: 3000,
