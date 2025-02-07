@@ -2,7 +2,16 @@
 const nextConfig = {
   reactStrictMode: false,
   images: {
-    domains: ["i.annihil.us"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "i.annihil.us",
+      },
+      {
+        protocol: "http",
+        hostname: "i.annihil.us",
+      },
+    ],
   },
 };
 
