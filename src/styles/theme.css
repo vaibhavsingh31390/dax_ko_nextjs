@@ -21,6 +21,22 @@
   --text-color: #ffffff !important;
 }
 
+*::-webkit-scrollbar {
+  @apply w-[8px] h-[8px];
+}
+
+*::-webkit-scrollbar-track {
+  @apply bg-[var(--secondary-background)];
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply bg-[var(--tertiary-color)] transition-all duration-300;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  @apply bg-[var(--tertiary-color)];
+}
+
 body {
   @apply bg-[var(--primary-background)]  !important;
   background-image: url("/images/bg-image.jpg");
