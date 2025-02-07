@@ -2,6 +2,18 @@
   @apply container mx-auto px-4;
 }
 
+@media (min-width: 968px) {
+  .ui-container {
+    @apply max-w-[86%];
+  }
+}
+
+@media (min-width: 1440px) {
+  .ui-container {
+    @apply max-w-[1440px];
+  }
+}
+
 .ui-row {
   @apply flex flex-wrap md:flex-nowrap -mx-4;
 }

@@ -4,7 +4,7 @@ header {
 }
 
 nav {
-  @apply flex justify-between items-center py-[1.5rem] md:py-[3.4rem];
+  @apply flex justify-between items-center py-[1.5rem] md:py-[3.4rem] gap-8;
 }
 
 .dax-ko-header-logo {
